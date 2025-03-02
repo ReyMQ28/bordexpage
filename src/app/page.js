@@ -4,6 +4,7 @@ import InfoSection from "../components/InfoSection";
 import HowToUSe from "../components/HowToUse";
 import Caracteristics from "../components/Caracteristics";
 import Compañias from "../components/Compañias";
+import Pricing from "../components/Pricing";
 
 import { ArrowRight, CheckCircle, Globe, Shield, Zap } from "lucide-react";
 
@@ -12,10 +13,11 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-1">
-      <InfoSection />
-      <Caracteristics />
-      <HowToUSe />
-      <Compañias />
+        <InfoSection />
+        <Caracteristics />
+        <HowToUSe />
+        <Compañias />
+        <Pricing />
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
@@ -54,7 +56,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
+
         <section
           id="features"
           className="w-full py-12 md:py-24 lg:py-32 bg-muted"
@@ -158,129 +160,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section
-          id="pricing"
-          className="w-full py-12 md:py-24 lg:py-32 bg-muted"
-        >
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Pricing
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                  Simple, transparent pricing
-                </h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  {/* Choose the plan that's right for your business */}
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-3 lg:gap-8">
-              <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">Starter</h3>
-                  <p className="text-muted-foreground">
-                    Perfect for small businesses
-                  </p>
-                </div>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-4xl font-bold">$49</span>
-                  <span className="ml-1 text-muted-foreground">/month</span>
-                </div>
-                <ul className="mt-6 space-y-2">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary" />
-                    <span>Up to 100 crossings per month</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary" />
-                    <span>Basic documentation</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary" />
-                    <span>Email support</span>
-                  </li>
-                </ul>
-                <button className="mt-8">Get Started</button>
-              </div>
-              <div className="flex flex-col rounded-lg border bg-primary p-6 shadow-sm">
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-bold text-primary-foreground">
-                    Professional
-                  </h3>
-                  <p className="text-primary-foreground/80">
-                    For growing businesses
-                  </p>
-                </div>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-4xl font-bold text-primary-foreground">
-                    $149
-                  </span>
-                  <span className="ml-1 text-primary-foreground/80">
-                    /month
-                  </span>
-                </div>
-                <ul className="mt-6 space-y-2">
-                  <li className="flex items-center gap-2 text-primary-foreground">
-                    <CheckCircle className="h-4 w-4" />
-                    <span>Up to 1,000 crossings per month</span>
-                  </li>
-                  <li className="flex items-center gap-2 text-primary-foreground">
-                    <CheckCircle className="h-4 w-4" />
-                    <span>Advanced documentation</span>
-                  </li>
-                  <li className="flex items-center gap-2 text-primary-foreground">
-                    <CheckCircle className="h-4 w-4" />
-                    <span>Priority support</span>
-                  </li>
-                  <li className="flex items-center gap-2 text-primary-foreground">
-                    <CheckCircle className="h-4 w-4" />
-                    <span>Analytics dashboard</span>
-                  </li>
-                </ul>
-                <button variant="secondary" className="mt-8">
-                  Get Started
-                </button>
-              </div>
-              <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">Enterprise</h3>
-                  <p className="text-muted-foreground">
-                    For large organizations
-                  </p>
-                </div>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-4xl font-bold">$499</span>
-                  <span className="ml-1 text-muted-foreground">/month</span>
-                </div>
-                <ul className="mt-6 space-y-2">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary" />
-                    <span>Unlimited crossings</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary" />
-                    <span>Complete documentation suite</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary" />
-                    <span>24/7 dedicated support</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary" />
-                    <span>Custom integrations</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-primary" />
-                    <span>Advanced analytics</span>
-                  </li>
-                </ul>
-                <button className="mt-8">Contact Sales</button>
-              </div>
-            </div>
-          </div>
-        </section>
+        
+
         <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">

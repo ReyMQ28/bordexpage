@@ -11,7 +11,7 @@ const Compañias = () => {
           alt="Logo 4"
           width={100}
           height={10}
-          className="h-8 sm:h-10 md:h-12 lg:h-12 xl:h-12 text-slate-400"
+          className="h-12"
         />
       </Link>
       <Link href="https://example.com/link1">
@@ -20,7 +20,7 @@ const Compañias = () => {
           alt="Logo 1"
           width={120}
           height={30}
-          className="h-12 sm:h-16 md:h-20 lg:h-24 xl:h-32"
+          className="h-12"
         />
       </Link>
       <Link href="https://example.com/link4">
@@ -29,7 +29,7 @@ const Compañias = () => {
           alt="Logo 4"
           width={120}
           height={56}
-          className="h-10 sm:h-12 md:h-14 lg:h-16 xl:h-18"
+          className="h-12"
         />
       </Link>
       <Link href="https://example.com/link3">
@@ -38,7 +38,7 @@ const Compañias = () => {
           alt="Logo 3"
           width={120}
           height={112}
-          className="h-12 sm:h-16 md:h-20 lg:h-24 xl:h-28"
+          className="h-12"
         />
       </Link>
       <Link href="https://example.com/link5">
@@ -47,7 +47,7 @@ const Compañias = () => {
           alt="Logo 5"
           width={120}
           height={60}
-          className="h-10 sm:h-14 md:h-16 lg:h-18 xl:h-20"
+          className="w-18"
         />
       </Link>
     </div>

@@ -38,7 +38,7 @@ export default function HowToUse() {
         </div>
         <div className="mt-16 relative flex justify-center ">
           {/* Linea Vertical segmentada */}
-          <div className="absolute left-[37%] top-0 bottom-0 w-px border-l-2 border-dashed border-primary/20 hidden md:block" />
+          <div className="absolute left-[37%] top-0 bottom-0 w-px border-l-2 border-dashed border-primary/20 text-gray-400 hidden md:block" />
 
           <div className="space-y-14 flex flex-col items-start justify-center max-w-[400px] mx-auto">
             {steps.map((step, index) => (

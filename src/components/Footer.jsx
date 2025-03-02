@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 const Footer = () => {
     return (
-        <footer className="bg-orange-50 p-4 md:px-32 md:py-12 text-sm">
+        <footer className="bg-blue-50 p-4 md:px-32 md:py-12 text-sm">
             <div className="flex flex-col md:flex-row justify-between items-center mb-16">
                 <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 font-[family-name:var(--font-quicksand)]">
                     <Link href="/about" className="text-gray-700 font-semibold">Sobre mi</Link>
-                    <Link href="/blog" className="text-gray-700 font-semibold">Blog</Link>
-                    <Link href="/gallery" className="text-gray-700 font-semibold">Galería</Link>
+                    <Link href="/blog" className="text-gray-700 font-semibold">Pricing</Link>
+                    <Link href="/gallery" className="text-gray-700 font-semibold">Portafolio</Link>
                     <Link href="/contact" className="text-gray-700 font-semibold">Contacto</Link>
                 </div>
                 <div className="flex space-x-5 mt-4 md:mt-0">

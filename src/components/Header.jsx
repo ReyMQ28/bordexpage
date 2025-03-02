@@ -64,7 +64,7 @@ function Header() {
           Sobre Mi
         </Link>
         <Link
-          href=""
+          href="/pricing"
           className="text-gray-700 hover:text-gray-900 font-semibold"
         >
           Pricing
@@ -83,7 +83,7 @@ function Header() {
         </Link>
       </nav>
       <div className="hidden md:flex space-x-4 mr-6 font-semibold">
-        <button className="rounded-full px-4 py-2 flex items-center justify-center gap-2 flex-rows border-2 border-gray-700 text-gray-700 hover:bg-orange-500">
+        <button className="rounded-full px-4 py-2 flex items-center justify-center gap-2 flex-rows border-2 border-gray-700 text-gray-700 hover:bg-blue-800 hover:text-white">
           <Link href={`/contactanos`}>Contáctanos</Link>
           <ArrowRight className="h-5 w-5" />
         </button>
