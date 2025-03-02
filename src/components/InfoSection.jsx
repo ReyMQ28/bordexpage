@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 function InfoSection() {
   return (
-    <div className="w-full mb-12 pb-16 relative">
+    <div className="w-full mb-20 relative">
       <div className="w-full relative">
         <Image
           className="w-full h-auto overflow-hidden filter brightness-50"
