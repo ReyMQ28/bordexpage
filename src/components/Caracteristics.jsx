@@ -19,7 +19,7 @@ export default function Caracteristics() {
           <div className="mt-16 md:mt-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
             <div className="flex flex-col max-w-full md:max-w-[280px] justify-center items-start gap-4 m-4">
               <div className="w-16 flex flex-col items-start">
-                <div className="w-12 h-12 rounded-lg bg-red-100 flex flex-col items-center justify-center z-10">
+                <div className="w-12 h-12 rounded-xl bg-pink-100 flex flex-col items-center justify-center z-10">
                   <FaUserPlus className="w-6 h-6 text-rose-600" />
                 </div>
               </div>
@@ -34,7 +34,7 @@ export default function Caracteristics() {
             </div>
             <div className="flex flex-col max-w-full md:max-w-[280px] justify-center items-start gap-4 m-4">
               <div className="w-16 flex flex-col items-start">
-                <div className="w-12 h-12 rounded-lg bg-blue-100 flex flex-col items-center justify-center z-10">
+                <div className="w-12 h-12 rounded-xl bg-blue-100 flex flex-col items-center justify-center z-10">
                   <FaCogs className="w-6 h-6 text-blue-600" />
                 </div>
               </div>
@@ -49,7 +49,7 @@ export default function Caracteristics() {
             </div>
             <div className="flex flex-col max-w-full md:max-w-[280px] justify-center items-start gap-4 m-4">
               <div className="w-16 flex flex-col items-start">
-                <div className="w-12 h-12 rounded-lg bg-sky-100 flex flex-col items-center justify-center z-10">
+                <div className="w-12 h-12 rounded-xl bg-sky-100 flex flex-col items-center justify-center z-10">
                   <FaChartLine className="w-6 h-6 text-sky-400" />
                 </div>
               </div>
@@ -64,7 +64,7 @@ export default function Caracteristics() {
             </div>
             <div className="flex flex-col max-w-full md:max-w-[280px] justify-center items-start gap-4 m-4">
               <div className="w-16 flex flex-col items-start">
-                <div className="w-12 h-12 rounded-lg bg-gray-100 flex flex-col items-center justify-center z-10">
+                <div className="w-12 h-12 rounded-xl bg-gray-100 flex flex-col items-center justify-center z-10">
                   <FaChartLine className="w-6 h-6 text-blue-950" />
                 </div>
               </div>
