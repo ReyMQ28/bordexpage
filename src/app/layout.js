@@ -1,13 +1,13 @@
 import "./globals.css"
 
 export const metadata = {
-  title: "Bordex - Simplify Your Border Management",
-  description: "Bordex helps you manage cross-border operations with ease. Streamline your processes and save time.",
+  title: "Bordex - Optimiza tus procesos con Bordex",
+  description: "Bordex la herramienta ideal para el control eficiente de inventarios.",
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body>{children}</body>
     </html>
   )
