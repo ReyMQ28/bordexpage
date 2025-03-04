@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Compañias = () => {
   return (
-    <div className="bg-white flex flex-wrap justify-around items-center p-4 sm:p-8 md:p-12">
+    <div className="flex flex-wrap justify-around items-center sm:p-8 md:p-2 mb-16 ">
       <Link href="https://example.com/link4">
         <Image 
           src="https://i.postimg.cc/tCy5sPJB/UDD-negro.png"

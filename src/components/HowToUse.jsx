@@ -23,7 +23,7 @@ const steps = [
 
 export default function HowToUse() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-16 bg-white">
+    <section className="w-full py-12 md:py-16 lg:py-14 bg-white">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2 max-w-[800px]">

@@ -51,26 +51,29 @@ function Header() {
         </Link>
       </div>
       <nav
-        className={`hidden md:flex space-x-8 ml-12 ${isScrolled ? " " : ""}`}
+        className={`hidden md:flex space-x-6 ml-12 ${isScrolled ? " " : ""}`}
       >
-        <Link href="/" className="hover:text-sky-500 font-semibold px-2">
+        <Link href="/" className="hover:text-blue-600 font-semibold px-2">
           Inicio
         </Link>
-        <Link href="" className="hover:text-sky-600 font-semibold px-2">
-          Sobre Mi
+        <Link href="" className="hover:text-blue-600 font-semibold px-2">
+          ¿Qué es Bordex?
         </Link>
-        <Link href="/pricing" className="hover:text-sky-600 font-semibold px-2">
+        <Link
+          href="/pricing"
+          className="hover:text-blue-600 font-semibold px-2"
+        >
           Precios
         </Link>
-        <Link href="" className="hover:text-sky-600 font-semibold px-2">
+        <Link href="" className="hover:text-blue-600 font-semibold px-2">
           Portafolio
         </Link>
-        <Link href="" className="hover:text-sky-600 font-semibold px-2">
+        <Link href="" className="hover:text-blue-600 font-semibold px-2">
           Dashboard
         </Link>
       </nav>
       <div className="hidden md:flex space-x-4 mr-6 font-semibold">
-        <button className="rounded-full px-4 py-2 flex items-center justify-center gap-2 flex-rows border-2 border-gray-700 text-gray-700 hover:bg-sky-500 hover:text-white">
+        <button className="rounded-full px-4 py-2 flex items-center justify-center gap-2 flex-rows border-2 border-black  hover:bg-blue-600 hover:text-white hover:border-transparent">
           <Link href={`/contactanos`}>Contáctanos</Link>
           <ArrowRight className="h-5 w-5" />
         </button>
@@ -107,13 +110,7 @@ function Header() {
             >
               Blog
             </Link>
-            <Link
-              href={`/unete`}
-              className="text-gray-700 hover:text-gray-900 font-semibold"
-              onClick={closeMenu}
-            >
-              Únase a Nosotros
-            </Link>
+
             <Link
               href={`/contactanos`}
               className="text-gray-700 hover:text-gray-900 font-semibold"

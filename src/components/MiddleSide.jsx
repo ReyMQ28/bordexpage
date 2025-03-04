@@ -8,23 +8,23 @@ import Image from "next/image";
 
 const MiddleSide = () => {
   return (
-    <div className=" bg-gray-50">
+    <div className=" bg-gray-50 mx-auto">
       {/* MiddleSide */}
-      <div>
+      <div className="">
         <div className="w-full grid grid-cols-4 max-w-[1200px] gap-4 mx-auto bg-white">
-          <button className="flex flex-row justify-center items-center gap-2 bg-sky-500 text-white py-3 rounded-lg hover:bg-sky-100 hover:text-blue-400">
+          <button className="flex flex-row justify-center items-center gap-2 bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-500/10 hover:text-blue-400">
             <HiOutlineUsers className="text-xl" />{" "}
             <p className="font-semibold text-lg">Team Scheduling </p>
           </button>
-          <button className="flex flex-row justify-center items-center gap-2 py-3 rounded-lg hover:bg-sky-100 hover:text-blue-400">
+          <button className="flex flex-row justify-center items-center gap-2 py-3 rounded-lg hover:bg-blue-500/10 hover:text-blue-400">
             <RiBankLine className="text-xl" />{" "}
             <p className="font-semibold text-lg">Payments </p>
           </button>
-          <button className="flex flex-row justify-center items-center gap-2 py-3 rounded-lg hover:bg-sky-100 hover:text-blue-400">
+          <button className="flex flex-row justify-center items-center gap-2 py-3 rounded-lg hover:bg-blue-500/10 hover:text-blue-400">
             <TbDeviceDesktopCode className="text-xl" />{" "}
             <p className="font-semibold text-lg">Embedding </p>
           </button>
-          <button className="flex flex-row justify-center items-center gap-2 py-3 rounded-lg hover:bg-sky-100 hover:text-blue-400">
+          <button className="flex flex-row justify-center items-center gap-2 py-3 rounded-lg hover:bg-blue-500/10 hover:text-blue-400">
             <LuNetwork className="text-xl" />{" "}
             <p className="font-semibold text-lg">Workflows</p>
           </button>
@@ -74,7 +74,7 @@ const MiddleSide = () => {
           </div>
           <button
             variant="secondary"
-            className="mt-8 bg-sky-500 text-white rounded-full w-32 p-3 px-auto hover:bg-sky-600 "
+            className="mt-8 bg-blue-600 text-white rounded-full w-32 p-3 px-auto hover:bg-sky-600 "
           >
             Learn More
           </button>
