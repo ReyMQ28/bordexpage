@@ -51,7 +51,7 @@ function Header() {
         </Link>
       </div>
       <nav
-        className={`hidden md:flex space-x-6 ml-12 ${isScrolled ? " " : ""}`}
+        className={`hidden md:flex space-x-5 ml-12 ${isScrolled ? " " : ""}`}
       >
         <Link href="/" className="hover:text-blue-600 font-semibold px-2">
           Inicio
@@ -72,7 +72,7 @@ function Header() {
           Dashboard
         </Link>
       </nav>
-      <div className="hidden md:flex space-x-4 mr-6 font-semibold">
+      <div className="hidden md:flex space-x-4 mr-2 font-semibold">
         <button className="rounded-full px-4 py-2 flex items-center justify-center gap-2 flex-rows border-2 border-black  hover:bg-blue-600 hover:text-white hover:border-transparent">
           <Link href={`/contactanos`}>Contáctanos</Link>
           <ArrowRight className="h-5 w-5" />
