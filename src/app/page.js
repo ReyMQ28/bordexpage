@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <InfoSection />
-        {/* <Slider /> */}
+        <Slider />
         <Caracteristics />
         <HowToUSe />
         <Pricing />
