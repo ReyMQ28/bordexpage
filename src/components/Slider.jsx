@@ -33,8 +33,8 @@ const Slider = () => {
       ]
 
   return (
-    <div className="overflow-hidden whitespace-nowrap relative w-full">
-      <div className="flex items-center space-x-10 animate-marquee">
+    <div className="overflow-hidden whitespace-nowrap relative w-full mb-8">
+      <div className="flex items-center space-x-10 animate-marquee ">
         {logos.map((logo, index) => (
           <Image key={index} src={logo} alt={`Logo ${index}`} width={120} height={60} />
         ))}

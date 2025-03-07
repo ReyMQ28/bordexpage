@@ -11,10 +11,12 @@ function BotonLeerMas() {
 
   const alertMessage =
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente commodi maxime dolore nostrum at possimus molestias voluptate repudiandae.";
+
+
   return (
-    <div>
+    <div className="sm:hidden smd:hidden md:flex md">
       <button
-        className="bg-transparent rounded-full border border-gray-400 mb-6 flex items-center justify-center w-auto hover:bg-white/10"
+        className="sm:flex sm:justify-center sm:items-center sm:w-80 smd:w-auto bg-transparent rounded-full border border-gray-400 sm:mb-0 md:mb-8 md:mt-8 lg:mb-12 xl:mb-16 flex items-center justify-center w-auto hover:bg-white/10"
         onClick={openModal}
       >
         <span className="text-slate-400 hover:text-white text-sm flex flex-row items-center justify-center px-3 py-2">
