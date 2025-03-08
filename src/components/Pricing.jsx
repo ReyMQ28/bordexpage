@@ -21,7 +21,7 @@ function Pricing() {
 
         <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:mb-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Recuadro 1 */}
-          <div className="flex flex-col justify-around rounded-2xl h-12/12 bg-white border border-gray-200 p-6 shadow-md hover:border-sky-900 hover:bg-blue-500/10 select-none">
+          <div className="flex flex-col justify-around rounded-2xl h-12/12 bg-white border border-gray-200 p-6 shadow-md hover:border-zinc-30 hover:bg-blue-500/10 select-none">
             <div className="flex flex-col text-slate-900">
               <div className="space-y-2">
                 <h3 className="text-xl text-center font-semibold">Básico</h3>
@@ -63,7 +63,7 @@ function Pricing() {
             </button>
           </div>
           {/* Recuadro 2 */}
-          <div className="flex flex-col justify-around rounded-2xl h-12/12 bg-white border border-gray-200 p-6 shadow-md hover:border-sky-900 hover:bg-blue-500/10 select-none">
+          <div className="flex flex-col justify-around rounded-2xl h-12/12 bg-white border border-gray-200 p-6 shadow-md hover:border-xinc-300 hover:bg-blue-500/10 select-none">
             <div className="flex flex-col text-slate-900">
               <div className="space-y-2">
                 <h3 className="text-xl text-center font-semibold ">Estándar</h3>
@@ -107,7 +107,7 @@ function Pricing() {
             </button>
           </div>
           {/* Recuadro 3 */}
-          <div className="flex flex-col justify-around rounded-2xl h-12/12 bg-white border border-gray-200 p-6 shadow-xl hover:border-sky-900 hover:bg-blue-500/10 select-none">
+          <div className="flex flex-col justify-around rounded-2xl h-12/12 bg-white border border-gray-200 p-6 shadow-xl hover:border-zinc-300 hover:bg-blue-500/10 select-none">
             <div className="flex- flex-col text-slate-900">
               <div className="space-y-2">
                 <h3 className="text-xl text-center font-semibold">Pro</h3>
