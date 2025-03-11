@@ -1,14 +1,14 @@
 import Footer from "@/src/components/Footer";
 import Header from "@/src/components/Header";
-import Pricing from "@/src/components/Pricing";
+import NavSecciones from "@/src/components/Microsecciones/NavSecciones";
 
 function page() {
   return (
-    <>
+    <div className="mt-24">
       <Header />
-      <Pricing />
+      <NavSecciones />
       <Footer />
-    </>
+    </div>
   );
 }
 

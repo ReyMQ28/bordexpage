@@ -1,6 +1,6 @@
 import { CheckCircle } from "lucide-react";
 
-function Pricing() {
+function Precios() {
   const plans = [
     {
       title: "Básico",
@@ -56,11 +56,11 @@ function Pricing() {
         </div>
 
         {/* Recuadros */}
-        <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:mb-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:space-y-6">
+        <div className="lg:mx-auto grid lg:max-w-7xl md:max-w-3xl sm:grid-cols-1 smd:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-6 xl:gap-8 sm:space-y-4 lg:space-y-0 md:space-y-0 ">
           {plans.map((plan, index) => (
             <div
               key={index}
-              className="flex flex-col justify-around rounded-2xl h-12/12 bg-white border border-gray-200 p-6 shadow-md hover:border-zinc-30 hover:bg-blue-500/10 select-none"
+              className="flex flex-col justify-around rounded-2xl h-12/12 bg-white border p-6 shadow-md hover:bg-blue-500/10 select-none hover:scale-105 transition-transform duration-300"
             >
               <div className="flex flex-col text-slate-900">
                 <div className="space-y-2">
@@ -92,4 +92,4 @@ function Pricing() {
   );
 }
 
-export default Pricing;
+export default Precios;

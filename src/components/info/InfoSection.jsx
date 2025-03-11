@@ -1,12 +1,13 @@
 "use client";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import BotonLeerMas from "/src/components/BotonLeerMas";
+import BotonLeerMas from "/src/components/info/BotonLeerMas";
+import Link from "next/link";
 
 function InfoSection() {
   return (
     <container className="w-full ">
-      <div className="w-full relative sm:pt-16 smd:pt-0 mb-8">
+      <div className="w-full relative sm:pt-20 smd:pt-0 mb-8">
         <Image
           className="w-full h-auto overflow-hidden filter brightness-50"
           src={"https://i.postimg.cc/YqXcyMBJ/ai-generated-8704020.jpg"}
@@ -31,9 +32,12 @@ function InfoSection() {
           {/* Botones */}
           <div className="flex sm:flex-row sm:w-screen sm:justify-center sm:gap-2 smd:flex-row smd:w-screen smd:justify-center smd:gap-4 md:flex-row md:w-screen md:gap-6 mt-6 w-auto items-center">
             {/* Boton 1 */}
-            <button className="sm:text-sm sm:px-3 sm:w-auto sm:text-center smd:text-sm smd:px-3 smd:w-auto smd:text-center md:text-xl lg:text-base md:px-4 bg-blue-600 hover:bg-blue-500 text-white px-8 py-2 rounded-lg">
-              Explorar Funciones
-            </button>
+            <Link href={"/explorar-mas"}>
+              <button className="sm:text-sm sm:px-3 sm:w-auto sm:text-center smd:text-sm smd:px-3 smd:w-auto smd:text-center md:text-xl lg:text-base md:px-4 bg-blue-600 hover:bg-blue-500 text-white px-8 py-2 rounded-lg">
+                Explorar Funciones
+              </button>
+            </Link>
+
             {/* Boton 2 */}
             <button className="flex flex-row items-center justify-center sm:text-sm sm:px-4 sm:w-auto smd:text-sm smd:px-3 smd:w-auto smd:text-center md:text-xl md:px-4 lg:text-base text-white py-2 px-8 rounded-lg hover:bg-white/10 ">
               <p className="font-bold">Conoce Más </p>{" "}

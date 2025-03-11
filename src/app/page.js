@@ -1,14 +1,12 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import InfoSection from "../components/InfoSection";
-import HowToUSe from "../components/HowToUse";
-import Caracteristics from "../components/Caracteristics";
-import Pricing from "../components/Pricing";
+import InfoSection from "../components/info/InfoSection";
+import Caracteristicas from "../components/Caracteristicas";
+import ComoUsar from "../components/ComoUsar";
+import Precios from "../components/Precios";
 import Slider from "../components/Slider";
 import BotonFlotante from "../components/BotonFlotante";
-import Prueba from "../components/Prueba";
-
-// import { ArrowRight, CheckCircle, Globe, Shield, Zap } from "lucide-react";
+import NavSecciones from "../components/Microsecciones/NavSecciones";
 
 export default function Home() {
   return (
@@ -17,10 +15,10 @@ export default function Home() {
       <main className="flex-1">
         <InfoSection />
         <Slider />
-        <Caracteristics />
-        <HowToUSe />
-        <Pricing />
-        <Prueba />
+        <Caracteristicas />
+        <ComoUsar />
+        <Precios />
+        <NavSecciones />
         <BotonFlotante />
       </main>
       <Footer />

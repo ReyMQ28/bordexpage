@@ -9,6 +9,13 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const enlaces = [
+    { nombre: "Inicio", href: "/" },
+    { nombre: "¿Qué es Bordex?", href: "/" },
+    { nombre: "Precios", href: "/precios" },
+    { nombre: "Dashboard", href: "/" },
+  ];
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -33,95 +40,74 @@ function Header() {
   }, []);
 
   return (
-    <header
-      className={`bg-white flex items-center justify-between p-1 shadow-md select-none rounded-full m-2 fixed  lg:left-10 w-11/12 z-50  top-0 left-0  ${
-        isScrolled
-          ? "mt-2 bg-white/20 backdrop-blur-md border-b border-white/30"
-          : ""
-      }`}
-    >
-      <div className="text-xl font-bold ml-4 md:ml-28 cursor-pointer">
-        <Link href="/">
-          <Image
-            src={"https://i.postimg.cc/8kfcxvVR/logo-bordex.png"}
-            alt="Logo"
-            width={50}
-            height={50}
-          />
-        </Link>
-      </div>
-      <nav
-        className={`hidden md:flex space-x-5 ml-12 ${isScrolled ? " " : ""}`}
+    <div className="flex flex-col justify-center items-center w-full">
+      <header
+        className={`bg-white flex items-center justify-between p-1 shadow-md select-none rounded-full  z-50 fixed w-[90%] top-2 h-16 transition-all duration-500 ${
+          isScrolled
+            ? "bg-white/20 backdrop-blur-md border-b border-white/30"
+            : ""
+        }`}
       >
-        <Link href="/" className="hover:text-blue-600 font-semibold px-2">
-          Inicio
-        </Link>
-        <Link href="" className="hover:text-blue-600 font-semibold px-2">
-          ¿Qué es Bordex?
-        </Link>
-        <Link
-          href="/pricing"
-          className="hover:text-blue-600 font-semibold px-2"
-        >
-          Precios
-        </Link>
-        <Link href="" className="hover:text-blue-600 font-semibold px-2">
-          Portafolio
-        </Link>
-        <Link href="" className="hover:text-blue-600 font-semibold px-2">
-          Dashboard
-        </Link>
-      </nav>
-      <div className="hidden md:flex space-x-4 mr-2 font-semibold">
-        <button className="rounded-full px-4 py-2 flex items-center justify-center gap-2 flex-rows border-2 border-black  hover:bg-blue-600 hover:text-white hover:border-transparent">
-          <Link href={`/contactanos`}>Contáctanos</Link>
-          <ArrowRight className="h-5 w-5" />
-        </button>
-      </div>
-      <div className="md:hidden mr-4">
+        <div className="text-xl font-bold mx-4 cursor-pointer">
+          <Link href="/">
+            <Image
+              src={"https://i.postimg.cc/8kfcxvVR/logo-bordex.png"}
+              alt="Logo"
+              width={50}
+              height={50}
+              className="sm:w-10 sm:h-10 lg:w-12 lg:h-12 xl:w-12 xl:h-12"
+              
+            />
+          </Link>
+        </div>
+        <nav className={`space-x-5 mx-4 xl:flex lg:flex md:hidden hidden`}>
+          {enlaces.map((enlace, index) => (
+            <Link
+            
+            key={index}
+              href={enlace.href}
+              className="hover:text-blue-600 font-semibold px-2 "
+            >
+              {enlace.nombre}
+            </Link>
+          ))}
+        </nav>
+        <div className="space-x-4 mr-2 font-semibold md:translate-x-48 xl:translate-x-0 lg:translate-x-0 xl:flex lg:flex md:flex sm:hidden smd:hidden">
+          <button className="rounded-full px-4 py-2 flex items-center justify-center gap-2 flex-rows border-2 border-black  hover:bg-blue-600 hover:text-white hover:border-transparent">
+            <Link href={`/contactanos`}>Contáctanos</Link>
+            <ArrowRight className="h-5 w-5" />
+          </button>
+        </div>
+
         <button
           onClick={toggleMenu}
-          className="text-gray-700 focus:outline-none"
+          className="text-gray-700 focus:outline-none mx-4 xl:hidden lg:hidden md:flex smd:flex sm:flex"
         >
-          {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          {isOpen ? (
+            <FaTimes className="text-3xl" />
+          ) : (
+            <FaBars className="text-3xl" />
+          )}
         </button>
-      </div>
-      {isOpen && (
-        <div className="md:hidden absolute top-16 left-0 w-full z-20 bg-white shadow-md">
-          <nav className="flex flex-col items-center space-y-4 py-4">
-            <Link
-              href="/"
-              className="text-gray-700 hover:text-gray-900 font-semibold"
-              onClick={closeMenu}
-            >
-              Inicio
-            </Link>
-            <Link
-              href=""
-              className="text-gray-700 hover:text-gray-900 font-semibold"
-              onClick={closeMenu}
-            >
-              Sobre Mi
-            </Link>
-            <Link
-              href=""
-              className="text-gray-700 hover:text-gray-900 font-semibold"
-              onClick={closeMenu}
-            >
-              Blog
-            </Link>
 
-            <Link
-              href={`/contactanos`}
-              className="text-gray-700 hover:text-gray-900 font-semibold"
-              onClick={closeMenu}
-            >
-              Contáctanos
-            </Link>
-          </nav>
-        </div>
-      )}
-    </header>
+        {isOpen && (
+          <div className="md:hidden absolute top-20 left-0 w-full z-20 rounded-lg bg-white shadow-md transition-all duration-500 ease-in-out">
+            <nav className="flex flex-col items-center space-y-4 py-4 ">
+              {enlaces.map((enlace, index) => (
+                <Link
+                  key={index}
+                  href={enlace.url}
+                  className="hover:text-blue-600 font-semibold px-2"
+                  onClick={closeMenu}
+                >
+                  {enlace.nombre}
+                </Link>
+              ))}
+            </nav>
+          </div>
+        )}
+      </header>
+    </div>
   );
 }
 
