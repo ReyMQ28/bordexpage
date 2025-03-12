@@ -1,61 +1,45 @@
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
+const links = [
+  { href: "/gallery", text: "Inicio" },
+  { href: "/about", text: "¿Qué es Bordex?" },
+  { href: "/precios", text: "Precios" },
+  { href: "/contact", text: "Dashboard" },
+];
+
+const socialLinks = [
+  { href: "https://facebook.com", icon: <FaFacebook /> },
+  { href: "https://twitter.com", icon: <FaTwitter /> },
+  { href: "https://instagram.com", icon: <FaInstagram /> },
+  { href: "https://linkedin.com", icon: <FaLinkedin /> },
+];
+
 const Footer = () => {
   return (
     <footer className="bg-gray-100 p-4 md:px-32 md:py-12 text-sm">
       <div className="flex flex-col md:flex-row justify-between items-center mb-16">
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-10 lg:space-x-10 font-[family-name:var(--font-quicksand)]">
-          <Link
-            href="/about"
-            className="text-gray-700 hover:text-blue-600 font-semibold"
-          >
-            ¿Qué es Bordex?
-          </Link>
-          <Link
-            href="/precios"
-            className="text-gray-700 hover:text-blue-600 font-semibold"
-          >
-            Precios
-          </Link>
-          <Link
-            href="/gallery"
-            className="text-gray-700 hover:text-blue-600 font-semibold"
-          >
-            Portafolio
-          </Link>
-          <Link
-            href="/contact"
-            className="text-gray-700 hover:text-blue-600 font-semibold"
-          >
-            Dashboard
-          </Link>
+          {links.map((link, index) => (
+            <Link
+              key={index}
+              href={link.href}
+              className="text-gray-700 hover:text-blue-600 font-semibold"
+            >
+              {link.text}
+            </Link>
+          ))}
         </div>
         <div className="flex space-x-10 mt-4 md:mt-0">
-          <Link
-            href="https://facebook.com"
-            className="text-gray-700 hover:text-blue-600"
-          >
-            <FaFacebook />
-          </Link>
-          <Link
-            href="https://twitter.com"
-            className="text-gray-700 hover:text-blue-600"
-          >
-            <FaTwitter />
-          </Link>
-          <Link
-            href="https://instagram.com"
-            className="text-gray-700 hover:text-blue-600"
-          >
-            <FaInstagram />
-          </Link>
-          <Link
-            href="https://linkedin.com"
-            className="text-gray-700 hover:text-blue-600"
-          >
-            <FaLinkedin />
-          </Link>
+          {socialLinks.map((social, index) => (
+            <Link
+              key={index}
+              href={social.href}
+              className="text-gray-700 hover:text-blue-600"
+            >
+              {social.icon}
+            </Link>
+          ))}
         </div>
       </div>
       <div className="text-center b-12 font-semibold text-gray-400">

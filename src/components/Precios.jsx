@@ -45,7 +45,7 @@ function Precios() {
       <div className="container px-4 mb-1 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="">
-            <h2 className="text-5xl mb-6 text-slate-900 font-medium sm:text-4xl/tight smd:text-4xl/tight md:text-5xl/tight">
+            <h2 className="text-5xl mb-6 text-slate-900 font-medium sm:text-4xl/tight smd:text-4xl/tight md:text-4xl/tight lg:text-4xl/tight xl:text-4xl/tight">
               Elige el plan ideal para tu negocio
             </h2>
             <p className="inline-block rounded-lg px-3 mb-8 text-md text-gray-600">

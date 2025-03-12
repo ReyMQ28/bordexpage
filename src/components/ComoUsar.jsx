@@ -27,10 +27,10 @@ export default function HowToUse() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-3 max-w-[800px]">
-            <h2 className="text-2xl font-medium tracking-tighter sm:text-4xl smd:text-5xl md:text-5xl lg:text-6xl xl:text-7xl mb-10">
+            <h2 className="text-2xl font-medium tracking-tighter sm:text-4xl smd:text-4xl md:text-x4l lg:text-4xl xl:text-4xl mb-10">
               Cómo Usar Bordex
             </h2>
-            <p className="mx-auto lg:max-w-[640px] xl:max-w-[750px] text-muted-foreground sm:text-base smd:px-3 smd:text-xl md:text-xl xl:text-2xl md:px-6 md:mb-20 lg:px-0">
+            <p className="mx-auto lg:max-w-[640px] xl:max-w-[750px] text-muted-foreground sm:text-base smd:px-3 smd:text-base md:text-lg xl:text-lg md:px-6 md:mb-20 lg:px-0">
               Sigue estos pasos para implementar Bordex en tu negocio y
               maximizar la eficiencia.
             </p>
@@ -53,8 +53,8 @@ export default function HowToUse() {
 
               <div className="flex flex-col items-center justify-center sm:items-start space-y-3">
                 <div className="space-y-2">
-                  <h3 className="sm:text-lg md:text-2xl smd:text-2xl xl:text-3xl font-bold ">{step.title}</h3>
-                  <p className="text-muted-foreground smd:text-base md:text-xl lg:pr-24 xl:text-2xl xl:pr-28">{step.description}</p>
+                  <h3 className="sm:text-lg md:text-xl smd:text-xl lg: text-xl xl:text-2xl font-bold ">{step.title}</h3>
+                  <p className="text-muted-foreground smd:text-base md:text-base lg:pr-24 xl:text-base xl:pr-28">{step.description}</p>
                 </div>
               </div>
             </div>
